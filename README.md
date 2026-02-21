@@ -179,8 +179,8 @@ This demo represents a real production system built collaboratively:
 
 | Role | Contributor |
 |------|-------------|
-| Full Stack Development (Django, DRF, frontend, payments) | [Kelson Brito](https://github.com/kelsonbrito50) |
-| DevOps & Infrastructure (Docker, Cloudflare, deployment) | [Lucas Amarante](https://github.com/lucasamarante27) |
+| **Full Stack Development** — Django backend, PostgreSQL database architecture, Django REST Framework APIs, Cielo payment integration, responsive frontend (HTML/CSS/JS), all application code (100%) | [Kelson Brito](https://github.com/kelsonbrito50) |
+| **DevOps & Infrastructure** — Docker containerization, Cloudflare WAF/SSL/DDoS setup, server deployment | [Lucas Amarante](https://github.com/lucasamarante27) |
 
 ---
 
