@@ -5,6 +5,8 @@
 
 ### Production-grade Django e-commerce powering a real Brazilian baby products brand.
 
+[![CI](https://github.com/kelsonbrito50/babyhappy-ecommerce/actions/workflows/ci.yml/badge.svg)](https://github.com/kelsonbrito50/babyhappy-ecommerce/actions) ![Docker](https://img.shields.io/badge/Docker-containerized-blue) ![Production](https://img.shields.io/badge/status-production-brightgreen)
+
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-4.2-092E20?style=for-the-badge&logo=django&logoColor=white)](https://djangoproject.com)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
