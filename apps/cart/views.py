@@ -11,7 +11,15 @@ def get_or_create_cart(request):
     """Get or create a cart based on the session key."""
     if not request.session.session_key:
         request.session.create()
-    cart, _ = Cart.objects.get_or_create(session_key=request.session.session_key)
+    session_key = request.session.session_key
+    # Persist the key in session data so it survives session.cycle_key() on login.
+    # cycle_key() changes the key but keeps the data, so the signal can read it.
+    # Use try/except to be safe with mock sessions in tests.
+    try:
+        request.session["_cart_session_key"] = session_key
+    except TypeError:
+        pass
+    cart, _ = Cart.objects.get_or_create(session_key=session_key)
     return cart
 
 

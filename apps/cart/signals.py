@@ -28,7 +28,10 @@ def merge_guest_cart_on_login(sender, request, user, **kwargs):
         * Otherwise → move the item to the user cart.
     - Delete the (now-empty) guest cart.
     """
-    session_key = request.session.session_key
+    # After login Django calls session.cycle_key() which changes the session key
+    # but preserves all session data. We store the original key in session data
+    # (_cart_session_key) inside get_or_create_cart() so we can retrieve it here.
+    session_key = request.session.get("_cart_session_key") or request.session.session_key
     if not session_key:
         return  # No session → no guest cart to merge
 
