@@ -106,7 +106,7 @@ def send_welcome_email_task(self, user_id: int) -> None:
     }
 
     subject = "Bem-vindo(a) ao BabyHappy! 🍼"
-    html_message = render_to_string("emails/verification_email.html", context)
+    html_message = render_to_string("emails/welcome_email.html", context)
     plain_message = (
         f"Olá, {user_name}!\n\n"
         "Seja bem-vindo(a) ao BabyHappy!\n"

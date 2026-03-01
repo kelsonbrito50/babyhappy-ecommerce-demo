@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo(a) ao BabyHappy! 🍼</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    .header { background: #ff6b9d; color: #fff; padding: 40px 24px; text-align: center; }
+    .header h1 { margin: 0; font-size: 30px; }
+    .header p  { margin: 10px 0 0; font-size: 15px; opacity: .9; }
+    .body { padding: 36px 24px; color: #333; text-align: center; }
+    .body h2 { color: #ff6b9d; margin-top: 0; font-size: 24px; }
+    .body p { line-height: 1.7; font-size: 15px; }
+    .highlight { background: #fff0f6; border-left: 4px solid #ff6b9d; padding: 16px 20px; border-radius: 4px; margin: 24px 0; text-align: left; }
+    .highlight ul { margin: 8px 0 0; padding-left: 20px; }
+    .highlight ul li { margin-bottom: 6px; }
+    .btn { display: inline-block; background: #ff6b9d; color: #fff; text-decoration: none; padding: 14px 40px; border-radius: 4px; font-weight: bold; font-size: 16px; margin: 24px 0; }
+    .btn:hover { background: #e0558a; }
+    .divider { border: none; border-top: 1px solid #f0f0f0; margin: 24px 0; }
+    .footer { background: #f0f0f0; padding: 20px 24px; text-align: center; font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>🍼 BabyHappy</h1>
+      <p>Produtos para bebês com muito amor ❤️</p>
+    </div>
+
+    <div class="body">
+      <h2>Seja bem-vindo(a), {{ user_name }}! 🎉</h2>
+
+      <p>
+        Sua conta foi verificada com sucesso! Estamos muito felizes em ter você
+        como parte da família BabyHappy.
+      </p>
+
+      <div class="highlight">
+        <strong>O que você pode fazer agora:</strong>
+        <ul>
+          <li>🛍️ Explorar nosso catálogo de produtos para bebês</li>
+          <li>❤️ Salvar seus itens favoritos</li>
+          <li>🚀 Fazer pedidos com entrega rápida e segura</li>
+          <li>🎁 Aproveitar promoções exclusivas para membros</li>
+        </ul>
+      </div>
+
+      <a href="{{ site_url }}" class="btn">Visitar a loja</a>
+
+      <hr class="divider">
+
+      <p style="font-size: 13px; color: #888;">
+        Obrigado por escolher a BabyHappy para cuidar do seu bebê com carinho.
+        Qualquer dúvida, nossa equipe está sempre à disposição.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>BabyHappy — Produtos para bebês com amor ❤️</p>
+      <p>© 2025 BabyHappy. Todos os direitos reservados.</p>
+      <p>Você recebeu este e-mail porque criou uma conta em <a href="{{ site_url }}" style="color: #ff6b9d;">{{ site_url }}</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
