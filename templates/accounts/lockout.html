@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso bloqueado — BabyHappy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.1);
+      max-width: 480px;
+      width: 100%;
+      padding: 48px 36px;
+      text-align: center;
+    }
+    .icon { font-size: 56px; margin-bottom: 16px; }
+    h1 { color: #333; font-size: 22px; margin-bottom: 12px; }
+    p { color: #666; line-height: 1.6; font-size: 15px; margin-bottom: 12px; }
+    .highlight { color: #ff6b9d; font-weight: bold; }
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      background: #ff6b9d;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 32px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .footer-note {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🔒</div>
+    <h1>Acesso temporariamente bloqueado</h1>
+    <p>
+      Detectamos várias tentativas de login inválidas nesta conta.
+      Por segurança, o acesso foi bloqueado temporariamente.
+    </p>
+    <p>
+      Tente novamente em <span class="highlight">30 minutos</span>.
+    </p>
+    <p>
+      Se você esqueceu sua senha, use o link de recuperação abaixo.
+    </p>
+    <a href="/api/accounts/password-reset/" class="btn">Recuperar senha</a>
+    <p class="footer-note">
+      BabyHappy — Sua segurança é nossa prioridade ❤️
+    </p>
+  </div>
+</body>
+</html>
